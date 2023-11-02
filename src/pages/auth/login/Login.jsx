@@ -37,7 +37,7 @@ function Login() {
   return (
     <div className="Login_cntr">
       <form className="Login_box_cntr" onSubmit={handleSubmit(onSubmit)}>
-        <h1 className="Login_title">Login</h1>
+        <h1 className="Login_title">Login ConnectU</h1>
         <div className="Login_form_cntr">
           <Input
             name="email"
