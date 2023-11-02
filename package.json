@@ -32,7 +32,6 @@
     "react-router-dom": "^6.17.0",
     "sass": "^1.69.5",
     "sort-by": "^1.2.0",
-    "surge": "^0.23.1",
     "vite-plugin-svgr": "^4.1.0",
     "zod": "^3.22.4",
     "zustand": "^4.4.4"

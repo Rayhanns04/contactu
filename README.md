@@ -43,7 +43,7 @@ yarn install
 4. Jalankan aplikasi:
 
 ```
-yarn run dev
+yarn dev
 ```
 
 ## Penggunaan
@@ -54,39 +54,20 @@ email: eve.holt@reqres.in
 password: cityslicka
 ```
 
-Untuk menggunakan ContactU, buka browser dan arahkan ke http://localhost:3000 or http://contactu-hans.surge.sh/
+Untuk menggunakan ContactU, buka browser dan arahkan ke http://localhost:3000 or https://connnectu-dev.netlify.app
 
 ## Deploy to Server
 
 Untuk deployment ke server, perlu memiliki surge.
 
-1. Install surge:
+1. Jalankan perintah berikut:
 
 ```
-npm install --global surge
+yarn build
 ```
 
-2. Jalankan perintah berikut:
+2. Aplikasi dapat diakses melalui alamat domain tersebut.
 
 ```
-yarn run build
-```
-
-3. Jalankan perintah berikut:
-
-```
-surge
-```
-
-4. Masukkan alamat domain yang diinginkan:
-
-```
-contactu-hans.surge.sh
-```
-
-5. Aplikasi dapat diakses melalui alamat domain tersebut.
-6. Untuk menghapus aplikasi dari server, jalankan perintah berikut:
-
-```
-surge teardown contactu-hans.surge.sh
+https://connnectu-dev.netlify.app/users
 ```
