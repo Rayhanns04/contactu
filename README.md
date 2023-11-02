@@ -46,9 +46,8 @@ yarn install
 yarn run dev
 ```
 
-## Penggunaan 
-// saya ingin mencamtumkan account yang bisa digunakan didalam pengguna ini
-untuk login gunakan email dan password berikut:
+## Penggunaan
+Untuk login gunakan email dan password berikut:
 
 ```
 email: eve.holt@reqres.in
