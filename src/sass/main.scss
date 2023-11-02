@@ -1,0 +1,16 @@
+@import "helpers/_variables.scss";
+@import "helpers/_mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    min-width: 100vw;
+    min-height: 100vh;
+    font-family: $font-family-sans-serif;
+}

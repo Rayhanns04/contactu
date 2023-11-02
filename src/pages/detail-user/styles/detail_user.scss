@@ -1,0 +1,59 @@
+@import "src/sass/helpers/variables";
+
+.DetailUser_cntr {
+ display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: map-get($size, "4");
+
+  .DetailUser_navbar {
+    background-color: white;
+    box-shadow: map-get($shadow, "base");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: map-get($size, "4");
+    gap: 12px;
+    cursor: pointer;
+
+    p {
+      font-size: map-get($text, "base");
+      color: map-get($color, "black");
+      font-weight: map-get($font, "semibold");
+      margin: 0;
+    }
+  }
+
+  .DetailUser_frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    img {
+      width: auto;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 999px;
+    }
+  }
+
+  .DetailUser_content {
+    h2 {
+      margin: 0;
+      font-size: map-get($text, "base");
+      font-weight: map-get($font, "bold");
+      color: map-get($color, "black");
+      text-align: center;
+    }
+  }
+
+  .DetailUser_action {
+    display: flex;
+    flex-direction: row;
+    gap: map-get($size, "2");
+  }
+}

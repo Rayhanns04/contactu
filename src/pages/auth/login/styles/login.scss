@@ -1,0 +1,42 @@
+@import "src/sass/helpers/variables";
+@import "src/sass/helpers/mixins";
+
+.Login_cntr {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 map-get($size, "4") 0 map-get($size, "4");
+
+  .Login_box_cntr {
+    width: 100%;
+    padding: map-get($size, "6") map-get($size, "4") map-get($size, "4") map-get($size, "6");
+    border-radius: map-get($size, "4");
+    border: 1px solid lightgray;
+    background-color: white;
+    box-shadow: map-get($shadow, "base");
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: map-get($size, "4");
+
+    @include sm {
+      width: 365px;
+    }
+    
+    .Login_title {
+      font-size: map-get($text, "2xl");
+      font-weight: map-get($font, "bold");
+      color: black;
+      margin-bottom: 0;
+    }
+
+    .Login_form_cntr {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+      gap: map-get($size, "2");
+    }
+  }
+}

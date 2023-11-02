@@ -1,0 +1,4 @@
+.Layout_cntr {
+  display: grid;
+  grid-template-columns:  max-content minmax(0, 1fr);
+}

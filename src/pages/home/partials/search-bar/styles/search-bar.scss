@@ -1,0 +1,5 @@
+@import "src/sass/helpers/variables";
+
+.SearchBar_cntr {
+  margin: map-get($size, "4") map-get($size, "4") 0 16px;
+}

@@ -1,0 +1,23 @@
+@import "src/sass/helpers/_variables.scss";
+
+.Input_cntr {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2px;
+
+  .Input_label {
+    font-size: map-get($text, "sm");
+    font-weight: map-get($font, "semibold");
+    color: gray;
+    margin-bottom: 0;
+  }
+
+  .Input_message {
+    font-size: map-get($text, "sm");
+    font-weight: map-get($font, "semibold");
+    color: red;
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,25 @@
+@import "src/sass/helpers/variables";
+@import "src/sass/helpers/mixins";
+
+.Modal_cntr {
+  width: 100%;
+  //padding: map-get($size, "6") map-get($size, "4") map-get($size, "4") map-get($size, "6");
+  //border-radius: map-get($size, "4");
+  //background-color: white;
+  //box-shadow: map-get($shadow, "base");
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: map-get($size, "4");
+
+  .Modal_form_cntr {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: map-get($size, "2");
+  }
+
+  .Modal_footer {
+    display: flex;
+    flex-direction: row;
+    gap: map-get($size, "4");
+  }
+}

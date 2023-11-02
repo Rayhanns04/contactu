@@ -1,0 +1,55 @@
+@import "src/sass/helpers/variables";
+
+.Home_cntr {
+  position: relative;
+  min-height: 100vh;
+
+  .UserLists_cntr {
+    height: 500px;
+    max-height: 500px;
+    overflow-y: scroll;
+
+    .loader {
+      font-size: map-get($text, "base");
+      color: map-get($color, "black");
+      font-weight: map-get($font, "normal");
+      text-align: center;
+    }
+
+    .UserLists_empty {
+      font-size: map-get($text, "base");
+      color: map-get($color, "black");
+      font-weight: map-get($font, "normal");
+      text-align: center;
+      padding: map-get($size, "4") 0;
+    }
+  }
+
+  .Home_navbar {
+    background-color: white;
+    box-shadow: map-get($shadow, "base");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: map-get($size, "4");
+    gap: map-get($size, "3");
+    cursor: pointer;
+
+    p {
+      font-size: map-get($text, "base");
+      color: map-get($color, "black");
+      font-weight: map-get($font, "semibold");
+      margin: 0;
+    }
+
+    .Home_btn_delete {
+      background: none;
+      outline: none;
+      border: none;
+      color: red;
+        font-size: map-get($text, "2xl");
+    }
+  }
+}

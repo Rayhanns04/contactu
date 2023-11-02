@@ -1,0 +1,8 @@
+@import "src/sass/helpers/variables";
+
+.Lists_cntr {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: map-get($size, "4");
+  padding: map-get($size, "8") map-get($size, "4") map-get($size, "4");
+}

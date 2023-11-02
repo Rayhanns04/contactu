@@ -1,0 +1,59 @@
+@import "src/sass/helpers/variables";
+@import "src/sass/helpers/mixins";
+
+.NoMatch_cntr {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .NoMatch_content {;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: map-get($size, "4");
+    padding: map-get($size, "4");
+    text-align: center;
+
+    @include md {
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      color: map-get($color, "black");
+      margin: 0;
+    }
+
+    h1:nth-child(1) {
+      font-size: map-get($text, "5xl");
+      font-weight: map-get($font, "bold");
+    }
+
+    h1:nth-child(2) {
+      font-size: map-get($text, "4xl");
+      font-weight: map-get($font, "semibold");
+    }
+
+    p {
+      font-size: map-get($text, "base");
+      color: darkgray;
+      font-weight: map-get($font, "normal");
+      margin: 0;
+    }
+
+    .NoMatch_btn {
+      background-color: map-get($color, "primary");
+      color: white;
+      font-size: map-get($text, "base");
+      font-weight: map-get($font, "semibold");
+      padding: map-get($size, "2") map-get($size, "4");
+      border-radius: map-get($size, "1");
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
